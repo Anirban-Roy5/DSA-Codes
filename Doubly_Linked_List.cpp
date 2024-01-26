@@ -183,20 +183,20 @@ void Doubly_Linked_List::printListBackward() // print <<----
 int32_t main()
 {
 
-    Doubly_Linked_List ll;
+    Doubly_Linked_List *ll = new Doubly_Linked_List();
 
-    ll.insert_at_end(4);
-    ll.insert_at_end(5);
-    ll.insert_at_front(34);
-    ll.delete_last_element();
-    ll.insert_at_end(6);
-    ll.insert_at_end(5);
+    ll->insert_at_end(4);
+    ll->insert_at_end(5);
+    ll->insert_at_front(34);
+    ll->delete_last_element();
+    ll->insert_at_end(6);
+    ll->insert_at_end(5);
 
-    ll.printListForward();
+    ll->printListForward();
 
-    ll.delete_first_element();
+    ll->delete_first_element();
 
-    ll.printListBackward();
+    ll->printListBackward();
 
 
     return 0;
